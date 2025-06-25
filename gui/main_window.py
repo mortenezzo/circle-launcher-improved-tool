@@ -61,8 +61,9 @@ class MainWindow(QMainWindow):
 
         os.makedirs(self.output_path, exist_ok=True)
 
-        # Crear INI y 3 estados
-        create_launcher_ini(app_name, self.output_path)
-        generate_3state_icon(app_name, self.output_path)
+        circle_launcher_path = os.path.join(self.output_path, "Circle Launcher")
+
+        create_launcher_ini(app_name, circle_launcher_path)
+        generate_3state_icon(self.icon_path, app_name, circle_launcher_path)
 
         self.status_label.setText("Launcher creado con éxito.")
