@@ -2,7 +2,7 @@
 This is a tool based on the rig0's original Circle Launcher tool.
 You can find the original tool [here](https://github.com/rig0/Circle-Launcher-Tool).
 
-> ![NOTE]
+> [!NOTE]
 > This tool is not affiliated with or endorsed by Circle Launcher or its developers.
 
 
@@ -37,10 +37,10 @@ The tool looks like this:
 
 ![tool](/img/tool.png)
 
-> ![NOTE]
+> [!NOTE]
 > Only PNG files are supported.
 
-> ![WARNING] 
+> [!WARNING] 
 > This tool use default Rainmeter skin path, so if you have a custom skin path set in Rainmeter, you can set
 > the path in RAINMETER_SKIN_PATH environment variable.
 
@@ -71,6 +71,6 @@ The tool looks like this:
 
 # Contributing
 
-> ![INFO]
+> [!INFO]
 > If you want to contribute to this project, you can create a pull request or open an issue on the GitHub repository.
 > You can also contact me on Discord.
