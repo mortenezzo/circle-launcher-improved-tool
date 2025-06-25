@@ -41,7 +41,7 @@ The tool looks like this:
 > Only PNG files are supported.
 
 > [!WARNING] 
-> This tool use default Rainmeter skin path, so if you have a custom skin path set in Rainmeter, you can set
+> This tool use default Rainmeter skin path, so if you have a custom skin path set in Rainmeter, you have to set
 > the path in RAINMETER_SKIN_PATH environment variable.
 
 # Installation
@@ -71,6 +71,6 @@ The tool looks like this:
 
 # Contributing
 
-> [!INFO]
+> [!NOTE]
 > If you want to contribute to this project, you can create a pull request or open an issue on the GitHub repository.
 > You can also contact me on Discord.
