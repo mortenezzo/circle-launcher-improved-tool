@@ -7,7 +7,7 @@ on:
   pull_request:
 
 jobs:
-  check:
+  branch_commit_checks:
     runs-on: ubuntu-latest
 
     steps:
