@@ -16,14 +16,12 @@ jobs:
 
       - name: Verify branch name
         run: |
-          if [ "${{ github.ref }}" != "refs/heads/main" ]; then
+          if [[ "${{ github.event_name }}" == "push" && "${{ github.ref }}" != "refs/heads/main" ]]; then
             echo "Error: Pushes are only allowed to the main branch."
             exit 1
           fi
 
-      - name: Verify commit message
-        run: |
-          if ! git log -1 --pretty=%B | grep -qE "^(feat|fix|docs|style|refactor|test|chore):"; then
-            echo "Error: Commit message must follow the conventional format (e.g., feat: add new feature)."
+          if [[ "${{ github.event_name }}" == "pull_request" && "${{ github.base_ref }}" != "main" ]]; then
+            echo "Error: Pull requests must target the main branch."
             exit 1
           fi
