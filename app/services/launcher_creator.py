@@ -27,6 +27,6 @@ def create_launcher_ini(app_name: str, circle_launcher_path: str) -> str:
         f.write(f"ButtonImage={app_name}\n")
         f.write("X=0\n")
         f.write("Y=0\n")
-        f.write(f"LeftMouseUpAction=\"#\"{app_name}#\"\"\n")
+        f.write(f"LeftMouseUpAction=#{app_name}#\n")
 
     return ini_path
