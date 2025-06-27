@@ -1,5 +1,5 @@
 import os
-from PIL import Image, ImageOps, ImageEnhance, ImageFilter
+from PIL import Image, ImageOps, ImageEnhance
 from PIL.ImageDraw import ImageDraw
 
 def resize_image(image: Image.Image, size: tuple[int, int] = (64, 64)) -> Image.Image:
